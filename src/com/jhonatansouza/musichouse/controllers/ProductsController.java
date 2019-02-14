@@ -3,6 +3,7 @@ package com.jhonatansouza.musichouse.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.jhonatansouza.dto.ProductDTO;
 
@@ -20,5 +21,14 @@ public class ProductsController {
 		System.out.println(product);
 		
 		return "helpers/ok";
+	}
+	
+	
+	public ModelAndView receiver() {
+		
+		ModelAndView md = new ModelAndView();
+		md.addObject("nome", "");
+		
+		return md;
 	}
 }
