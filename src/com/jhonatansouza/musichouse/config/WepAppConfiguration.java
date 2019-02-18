@@ -5,10 +5,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import com.jhonatansouza.daos.ProductDAO;
 import com.jhonatansouza.musichouse.controllers.HomeController;
+import com.jhonatansouza.musichouse.controllers.ProductsRest;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses = {HomeController.class} )
+@ComponentScan(basePackageClasses = {HomeController.class, ProductDAO.class} )
 public class WepAppConfiguration {
 
 	@Bean

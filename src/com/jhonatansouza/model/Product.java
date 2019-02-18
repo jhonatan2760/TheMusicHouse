@@ -1,4 +1,4 @@
-package com.jhonatan.souza.model;
+package com.jhonatansouza.model;
 
 public class Product {
 
